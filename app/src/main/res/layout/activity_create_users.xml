@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUsers">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/documentidET"
+        android:hint="User Name"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/f_nET"
+        android:layout_below="@id/documentidET"
+        android:hint="First Name"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/l_nET"
+        android:layout_below="@id/f_nET"
+        android:hint="Last Name"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneET"
+        android:layout_below="@id/l_nET"
+        android:hint="Phone Number"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:maxLength="11"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailET"
+        android:layout_below="@id/phoneET"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createBTN"
+        android:text="Sign Up"
+        android:layout_margin="15dp"
+        android:layout_below="@id/emailET"
+        android:onClick="addUsers"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Screen"
+        android:onClick="tomainmenu"
+        android:layout_below="@id/createBTN"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

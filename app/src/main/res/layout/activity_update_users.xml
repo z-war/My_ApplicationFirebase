@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_users">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Details"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:id="@+id/tv"
+        ></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameET"
+        android:hint="User Name"
+        android:textSize="15sp"
+        android:layout_below="@id/tv"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstnameET"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:textSize="15sp"
+        android:layout_below="@id/usernameET"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastnameET"
+        android:hint="Last Name"
+        android:textSize="15sp"
+        android:layout_below="@id/firstnameET"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:inputType="phone"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneETU"
+        android:hint="Phone Number"
+        android:textSize="15sp"
+        android:layout_below="@id/lastnameET"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailETU"
+        android:hint="Email"
+        android:textSize="15sp"
+        android:layout_below="@id/phoneETU"
+    android:inputType="textEmailAddress"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@id/emailETU"
+        android:id="@+id/updateBTN"
+        android:onClick="UpdateUser"
+        android:layout_margin="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Screen"
+        android:onClick="gotomain"
+        android:layout_below="@id/updateBTN"
+        android:layout_centerInParent="true"/>
+
+        />
+</RelativeLayout>
